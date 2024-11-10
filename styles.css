@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+}
+
+.cl {
+  background: linear-gradient(to bottom, #ffff66 0%, #ffffcc 100%);
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  font-family: "Sevillana", serif;
+
+  font-style: normal;
+  color: red;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+
+  padding: 100px 20px;
+  text-align: center;
+}
+
+h2 {
+
+  font-family: "Sevillana", serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: red;
+}
+
+
+
+.products {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin: 15px;
+  font-size: 1.2em;
+}
+
+.product-card p {
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+.about {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffcc00 0%, #ff6600 100%);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+}
